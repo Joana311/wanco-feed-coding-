@@ -1,0 +1,79 @@
+
+/* ------------------------------------------------------
+   buy
+------------------------------------------------------ */
+#flow{
+	margin-top:100px;
+}
+.buy .t_short th {
+	width: 50%;
+}
+@media screen and (max-width: 1380px){
+	.buy .t_short th {
+		width: 100%;
+	}
+}
+.buy .stepbar {
+	margin: 0 auto;
+}
+.buy .stepbar .stepbar_inner {
+	margin: 2em 0;
+	position: relative;
+}
+.buy .stepbar .stepbar_inner .no {
+	display: inline-flex;
+	align-items: center;
+}
+.buy .stepbar .stepbar_inner .no .no_inner {
+	display: inline-block;
+	width: 4em;
+	height: 4em;
+	content: "";
+	border-radius: 50%;
+	background-color: #364756;
+	color: #fff;
+	text-align: center;
+}
+.buy .stepbar .stepbar_inner .no i {
+	font-size:1.8rem;
+	display: block;
+	font-style: normal;
+	margin:4px 0 0 0;
+}
+.buy .stepbar .stepbar_inner .no .no_inner span {
+	display: inline-block;
+	line-height: 1.2em;
+	font-size: 1.2rem;
+	font-weight: bold;
+	position: relative;
+	top:14px;
+}
+.buy .stepbar .stepbar_inner .no h3 {
+	margin: 0 0 0 20px;
+	padding: 0;
+	font-family: 'Outfit', sans-serif;
+	font-size: 1.8rem;
+}
+.buy .stepbar .stepbar_inner .no h3:before{
+	display: none;
+}
+.buy .stepbar .stepbar_inner p {
+   margin:0;
+   padding: 0 0 0 80px;
+}
+.buy .stepbar .stepbar_inner .stepline {
+	width: 2px;
+	height: calc(100% + 1em);
+	background-color: #364756;
+	position: absolute;
+	top: 1em;
+	left: 1.8em;
+	z-index: -1;
+}
+.buy .stepbar_inner:last-of-type .stepline:last-of-type {
+   display: none;
+}
+.buy .postage_area,
+.buy .postage_area li{
+	margin:0;
+}

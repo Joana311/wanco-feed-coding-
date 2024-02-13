@@ -1,0 +1,82 @@
+
+/* ------------------------------------------------------
+   about
+------------------------------------------------------ */
+.about .text_emphasis h2{
+	border-bottom:none;
+	margin: 0 0 16px 0;
+	padding:0;
+}
+.about .t_short {
+	width: 100%;
+	margin:40px 0 0 ;
+}
+@media screen and (max-width: 1283px) {
+	.about .t_short th {
+		font-size:1.4rem;
+	}
+}
+.about .pagelink{
+	display: flex;
+	justify-content:space-between;
+	font-family: 'Zen Maru Gothic', sans-serif;
+	font-weight: 500;
+	font-size:2.0rem;
+	margin:30px 0 0 0;
+	padding:0;
+}
+.about .pagelink li{
+	color:#364756;
+	border:2px #364756 dotted;
+	border-radius:20px;
+	background: #fff;
+	width: calc(50% - 14px);
+	cursor: pointer;
+}
+.about .pagelink li a{
+	transition : 1s;
+	display: block;
+	padding:48px 24px;	
+}
+@media screen and (max-width: 1283px) {
+	.about .pagelink{
+		display: block;
+		font-size:1.8rem;
+	}	
+	.about .pagelink li{
+		width: 100%;
+	}
+	.about .pagelink li:nth-child(1){
+		margin-bottom:10px;
+	}
+	.about .pagelink li a{
+	    padding: 36px 18px;	
+	}
+}
+.about .pagelink li:nth-child(1){
+	background: #fff url("../img/img_pagelink_010.webp") no-repeat right center;
+	background-size: 149px 126px;
+}
+.about .pagelink li:nth-child(2){
+	background: #fff url("../img/img_pagelink_020.webp") no-repeat right center;
+	background-size: 149px 126px;
+}
+.about .pagelink li:hover{
+	border:2px #f47961 dotted;
+}
+.about .pagelink li a:hover{
+	background: rgba(255, 255, 255, 0.5);
+	opacity: 0.6 ;
+	color: #f47961;
+}
+
+.about .profile_area .img_inner img{
+	width:100px;
+	margin:0 0 0 40px;
+}
+
+@media screen and (max-width: 1283px) {
+	.about .profile_area .t_short {
+		padding: 0;
+	}
+}

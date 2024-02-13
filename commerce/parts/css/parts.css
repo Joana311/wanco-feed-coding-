@@ -1,0 +1,13 @@
+
+/* ------------------------------------------------------
+   commerce
+------------------------------------------------------ */
+body.commerce {
+	background:url("../../../common/img/bg_010.png") repeat;
+
+}
+@media screen and (max-width: 960px){
+	body.commerce {
+		background:url("../../../common/img/bg_010.png") repeat;
+	}
+}

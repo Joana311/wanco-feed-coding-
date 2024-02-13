@@ -1,0 +1,53 @@
+/* ------------------------------------------------------
+   commerce
+------------------------------------------------------ */
+.concept .text_inner{
+	display: flex;
+	align-items: flex-start;
+	margin: 0 0 120px 0;
+}
+@media screen and (max-width: 1283px) {
+	.concept .text_inner{
+		display: block;
+		margin: 0 0 100px 0;
+	}
+}
+.concept .text_inner p{
+	margin-top:0;
+}
+.concept .pagelink{
+	width:600px;
+	margin:0 0 0 40px;
+	font-family: 'Zen Maru Gothic', sans-serif;
+	font-weight: 500;
+	font-size:2.0rem;
+	color:#364756;
+	border:2px #364756 dotted;
+	border-radius:20px;
+}
+@media screen and (max-width: 1283px) {
+	.concept .pagelink{
+		width:100%;
+		margin:0 0 0 0;
+		font-size: 1.8rem;
+	}
+}
+.concept a.pagelink{
+	display: block;
+	cursor: pointer;
+	transition : 1s;
+	padding:40px 24px;
+	background: #fff url("../img/img_pagelink_010.webp") no-repeat right center;
+	background-size: 149px 126px;
+}
+@media screen and (max-width: 1283px) {
+	.concept a.pagelink{
+		padding: 36px 18px;
+	}
+}
+.concept a.pagelink:hover{
+	border:2px #f47961 dotted;
+	background-cplor: rgba(255, 255, 255, 0.5);
+	opacity: 0.6 ;
+	color: #f47961;
+}

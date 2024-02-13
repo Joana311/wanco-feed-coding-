@@ -1,0 +1,379 @@
+
+/* ------------------------------------------------------
+   index
+------------------------------------------------------ */
+.shop_index .text_inner{
+	display: flex;
+	align-items: flex-start;
+	margin: 0 0 120px 0;
+}
+@media screen and (max-width: 1283px) {
+	.shop_index .text_inner{
+		display: block;
+		margin: 0 0 100px 0;
+	}
+}
+.shop_index .text_inner p{
+	margin-top:0;
+}
+.shop_index .pagelink{
+	width:420px;
+	margin:0 0 0 40px;
+	font-family: 'Zen Maru Gothic', sans-serif;
+	font-weight: 500;
+	font-size:2.0rem;
+	color:#364756;
+	border:2px #364756 dotted;
+	border-radius:20px;
+}
+@media screen and (max-width: 1283px) {
+	.shop_index .pagelink{
+		width:100%;
+		margin:0 0 0 0;
+		font-size: 1.8rem;
+	}
+}
+.shop_index a.pagelink{
+	display: block;
+	cursor: pointer;
+	transition : 1s;
+	padding:48px 24px;
+	background: #fff url("../img/img_pagelink_020.webp") no-repeat right center;
+	background-size: 149px 126px;
+}
+@media screen and (max-width: 1283px) {
+	.shop_index a.pagelink{
+		padding: 36px 18px;
+	}
+}
+.shop_index a.pagelink:hover{
+	border:2px #f47961 dotted;
+	background-cplor: rgba(255, 255, 255, 0.5);
+	opacity: 0.6 ;
+	color: #f47961;
+}
+@media screen and (max-width: 1283px) {
+	.shop_index a.pagelink:hover{
+		/*display: none;*/
+	}
+}
+.shop_index .goods_area{
+	margin-bottom:100px;
+}
+@media screen and (max-width: 1283px) {
+	.shop_index .goods_area{
+		margin-bottom:40px;
+	}
+}
+.shop_index .goods_area ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding:0;
+}
+.shop_index .goods_area ul::after{
+	content:"";
+	display: block;
+	width:30%;
+}
+.shop_index .goods_area ul li{
+	background: #fff;
+	width: calc(33.3333% - 16px);
+    margin:0 0 20px 0;
+	border-radius: 10px;
+}
+@media screen and (max-width: 1283px) {
+	.shop_index .goods_area ul li{
+		width: calc(50% - 6px);
+		margin: 0 0 16px 0;
+	}
+}
+.shop_index .goods_area ul li a{
+	transition : 1s;
+}
+.shop_index .goods_area ul li a:hover{
+		opacity: 0.6 
+}
+@media screen and (max-width: 1283px) {
+	.shop_index .goods_area ul li a:hover{
+		margin-bottom:40px;
+	}
+}
+.shop_index .goods_area ul li img{
+	border-radius: 10px 10px 0 0;
+	width:100%;
+}
+.shop_index .goods_area ul li h3,
+.shop_index .goods_area ul li span{
+		padding:0 24px;
+}
+@media screen and (max-width: 1283px) {
+	.shop_index .goods_area ul li h3,
+	.shop_index .goods_area ul li span{
+			padding:0 20px;
+	}
+}
+.shop_index .goods_area ul li h3{
+	font-size:1.8rem;
+	line-height: 2.4rem;
+	margin:24px 0 10px 0;
+}
+@media screen and (max-width: 1283px) {
+	.shop_index .goods_area ul li h3{
+		font-size:1.6rem;
+		margin:10px 0;
+	}
+}
+.shop_index .goods_area ul li h3:before{
+	display: none;
+}
+.shop_index .goods_area ul li span{
+	display: block;
+	margin-bottom:24px;
+}
+@media screen and (max-width: 1283px) {
+	.shop_index .goods_area ul li span{
+		margin-bottom:16px;
+	}
+}
+.shop_index .goods_area ul li.icon_3packs,
+.shop_index .goods_area ul li.icon_2packs,
+.shop_index .goods_area ul li.icon_800g,
+.shop_index .goods_area ul li.icon_400g{
+	position: relative;
+}
+.shop_index .goods_area ul li.icon_3packs:after,
+.shop_index .goods_area ul li.icon_2packs:after,
+.shop_index .goods_area ul li.icon_800g:after,
+.shop_index .goods_area ul li.icon_400g:after{
+    position: absolute;
+    font-size: 1.4rem;
+    left: 14px;
+    top: 14px;
+	border-radius:10vw; 
+    display: inline-block;
+	vertical-align: middle;	
+	background-color: #f47961;
+	color:#fff;
+	padding:8px 10px;
+}
+@media screen and (max-width: 1283px) {
+	.shop_index .goods_area ul li.icon_3packs:after,
+	.shop_index .goods_area ul li.icon_2packs:after,
+	.shop_index .goods_area ul li.icon_800g:after,
+	.shop_index .goods_area ul li.icon_400g:after{
+		font-size: 1.2rem;
+		left: 0;
+		top: 0;
+		border-radius:0 0 2px 0; 
+		padding:4px 5px;
+	}
+}
+.shop_index .goods_area ul li.icon_3packs:after{
+    content: '800g×3袋セット';
+}
+.shop_index .goods_area ul li.icon_2packs:after{
+    content: '800g×2袋セット';
+}
+.shop_index .goods_area ul li.icon_800g:after{
+    content: '800g×1袋';
+}
+.shop_index .goods_area ul li.icon_400g:after{
+    content: '400g×1袋';
+}
+/* ------------------------------------------------------
+   sub
+------------------------------------------------------ */
+.shop .intro_area,
+.shop .other_area{
+	margin:0 0 100px 0;
+}
+@media screen and (max-width: 1283px) {
+	.shop .intro_area,
+	.shop .other_area{
+		margin:0 0 70px 0;
+	}
+	.shop .other_area p{
+		line-height: 1.6;
+	}
+}
+.shop .intro_area .price{
+	font-family: 'Outfit', sans-serif;
+	font-size:2.8rem;
+	margin:0;
+}
+.shop .intro_area .price span{
+	font-size:1.6rem;
+	margin:0 0 0 10px;
+}
+.intro_area .text{
+	margin:0 0 20px 0;
+}
+@media screen and (max-width: 1283px) {
+	.shop .intro_area .text{
+		margin:0 0 20px 0;
+	}
+}
+.shop ul.pagelink{
+	display: flex;
+	justify-content:space-between;
+	font-family: 'Zen Maru Gothic', sans-serif;
+	font-weight: 500;
+	font-size:2.0rem;
+	margin:0;
+	padding:0;
+}
+.shop ul.pagelink li{
+	color:#364756;
+	border:2px #364756 dotted;
+	border-radius:20px;
+	background: #fff;
+	width: calc(50% - 14px);
+	cursor: pointer;
+}
+.shop ul.pagelink li a{
+	transition : 1s;
+	display: block;
+	padding:48px 24px;	
+}
+@media screen and (max-width: 1283px) {
+	.shop ul.pagelink{
+		display: block;
+		font-size:1.8rem;
+	}	
+	.shop ul.pagelink li{
+		width: 100%;
+	}
+	.shop ul.pagelink li:nth-child(1){
+		margin-bottom:10px;
+	}
+	.shop ul.pagelink li a{
+	    padding: 36px 18px;	
+	}
+}
+.shop ul.pagelink li:nth-child(1){
+	background: #fff url("../img/img_pagelink_010.webp") no-repeat right center;
+	background-size: 149px 126px;
+}
+.shop ul.pagelink li:nth-child(2){
+	background: #fff url("../img/img_pagelink_020.webp") no-repeat right center;
+	background-size: 149px 126px;
+}
+.shop ul.pagelink li:hover{
+	border:2px #f47961 dotted;
+}
+.shop ul.pagelink li a:hover{
+	background: rgba(255, 255, 255, 0.5);
+	opacity: 0.6 ;
+	color: #f47961;
+}
+/* ------------------------------------------------------
+   shop
+------------------------------------------------------ */
+.shop h1 {
+    margin: 0 0 32px 0;
+}
+/* ------------------------------------------------------
+   slide
+------------------------------------------------------ */
+.shop .bx-wrapper,
+.shop .bxslider_thumbnail > li{
+	z-index: 0;
+}
+.shop .slide_area{
+	margin-bottom: 56px;	
+}
+.shop .bxslider_thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: space-between;
+	padding:0;
+}
+.shop .bxslider_thumbnail > li {
+   	margin: 0 14px 0 0;
+	width: calc(25% - 14px);
+	transition : 1s;
+}
+@media screen and (max-width: 1283px) {
+	 .shop .bxslider_thumbnail > li {
+			margin: 0 8px 0 0;
+			width: calc(25% - 8px);
+		}
+}
+.shop .bxslider_thumbnail > li:nth-of-type(4n) {
+	margin-right: 0; 
+}
+.shop .bxslider_thumbnail > li > a {
+    display: block;
+    position: relative;
+    padding-top: 75%;	
+}
+.shop .bxslider_thumbnail > li > a > img {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    max-height: 100%;
+	border:2px solid #fff;
+}
+.shop .bxslider_thumbnail .active img{
+	border:2px solid #364756;
+}
+.shop .bxslider_thumbnail > li:hover{
+	background: rgba(255, 255, 255, 0.5);
+	opacity: 0.6 
+}
+.shop .bxslider_thumbnail img{
+	border-radius: 10px;
+}
+@media screen and (max-width: 1283px) {
+	.shop .bxslider_thumbnail img{
+		border-radius: 5px;
+	}
+}
+.shop .bx-wrapper {
+    background-color: transparent;
+    margin: 0px auto;
+    border: none;
+    box-shadow: none;
+	width:750px;
+}
+.shop .bx-wrapper img {
+    display: block;
+    width: 100%;
+	border-radius: 10px;
+}
+.shop .icon_3packs,
+.shop .icon_2packs,
+.shop .icon_800g,
+.shop .icon_400g{
+	position: relative;
+}
+.shop .icon_3packs:after,
+.shop .icon_2packs:after,
+.shop .icon_800g:after,
+.shop .icon_400g:after{
+    position: absolute;
+    font-size: 1.8rem;
+    left: 20px;
+    top: 20px;
+	border-radius:10vw; 
+    display: inline-block;
+	vertical-align: middle;	
+	background-color: #f47961;
+	color:#fff;
+	padding:8px 16px;
+}
+.shop .icon_3packs:after{
+    content: '800g×3袋セット';
+}
+.shop .icon_2packs:after{
+    content: '800g×2袋セット';
+}
+.shop .icon_800g:after{
+    content: '800g×1袋';
+}
+.shop .icon_400g:after{
+    content: '400g×1袋';
+}
